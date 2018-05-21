@@ -27,13 +27,14 @@ public class _1_StartingThreads {
 				System.out.println("Thread: " + i + " " + Thread.currentThread().getName());
 				try {
 					Thread.sleep(1000);
-				} catch (InterruptedException e) {}
+				} catch (InterruptedException e) {
+				}
 			});
 
 		});
 		threadJava8.setName("Java 8 Runnable Thread");
 		threadJava8.start();
-		
+
 	}
 
 }
@@ -46,7 +47,8 @@ class Runner extends Thread {
 			System.out.println("Thread: " + i + " " + Thread.currentThread().getName());
 			try {
 				Thread.sleep(1000);
-			} catch (InterruptedException e) {}
+			} catch (InterruptedException e) {
+			}
 		});
 	}
 
@@ -60,7 +62,8 @@ class Runnabel implements Runnable {
 			System.out.println("Thread: " + i + " " + Thread.currentThread().getName());
 			try {
 				Thread.sleep(1000);
-			} catch (InterruptedException e) {}
+			} catch (InterruptedException e) {
+			}
 		});
 
 	}
