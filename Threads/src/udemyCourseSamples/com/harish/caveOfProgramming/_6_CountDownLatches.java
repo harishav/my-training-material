@@ -43,7 +43,6 @@ public class _6_CountDownLatches {
 		try {
 			latch.await();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
