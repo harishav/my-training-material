@@ -25,18 +25,17 @@ public class _7_ProducerConsumer {
 				e.printStackTrace();
 			}
 		});
-		
+
 		t1.start();
 		t2.start();
-		
+
 		try {
 			t1.join();
 			t2.join();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		
-		
+
 	}
 
 	private static void producer() throws InterruptedException {
