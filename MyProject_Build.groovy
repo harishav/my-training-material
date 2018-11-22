@@ -26,3 +26,29 @@ job("MyProject_Build") {
  
     }
 }
+def mvnGitUrl = "https://github.com/harishav/reservation_client.git"
+
+job("MyProject_Build1") {
+    description "Creating one more MyProject from master branch."
+    
+    scm {
+        git {
+            remote {
+                url mvnGitUrl
+                branch "origin/master"
+            }
+            extensions {
+                wipeOutWorkspace()
+                
+            }
+        }
+    }
+    steps {
+       
+        maven {
+            goals('clean')
+            goals('install')
+        }
+ 
+    }
+}
