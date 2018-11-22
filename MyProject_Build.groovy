@@ -13,7 +13,7 @@ job("MyProject_Build") {
             }
             extensions {
                 wipeOutWorkspace()
-                localBranch master
+                
             }
         }
     }
