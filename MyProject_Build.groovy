@@ -1,4 +1,4 @@
-def gitUrl = "https://github.com/harishav/my-training-material.git"
+def gitUrl = "https://github.com/harishav/reservation_client.git"
 
 job("MyProject_Build") {
     description "Builds MyProject from master branch."
@@ -18,6 +18,11 @@ job("MyProject_Build") {
         }
     }
     steps {
-        shell "echo Im building master!"
+       
+        maven {
+            goals('clean')
+            goals('install')
+        }
+ 
     }
 }
