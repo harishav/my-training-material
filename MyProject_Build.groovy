@@ -1,4 +1,4 @@
-def gitUrl = "https://github.com/example/project.git"
+def gitUrl = "https://github.com/harishav/my-training-material.git"
 
 job("MyProject_Build") {
     description "Builds MyProject from master branch."
