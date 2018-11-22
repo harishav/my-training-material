@@ -18,6 +18,6 @@ job("MyProject_Build") {
         }
     }
     steps {
-        shell "Look: I'm building master!"
+        shell "echo Im building master!"
     }
 }
