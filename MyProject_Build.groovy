@@ -8,7 +8,7 @@ job("MyProject_Build") {
     scm {
         git {
             remote {
-                url gitUrl.
+                url gitUrl
                 branch "origin/master"
             }
             extensions {
