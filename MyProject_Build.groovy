@@ -1,4 +1,4 @@
-def gitUrl = "https://github.com/harishav/reservation_client.git"
+def gitUrl = "https://github.com/harishav/gradle_basics.git"
 
 job("MyProject_Build") {
     description "Builds MyProject from master branch."
@@ -19,9 +19,9 @@ job("MyProject_Build") {
     }
     steps {
        
-        maven {
-            goals('clean')
-            goals('install')
+        gradle {
+            tasks('clean')
+            tasks('build')
         }
  
     }
